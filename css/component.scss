@@ -1,9 +1,30 @@
 $color-error-border: #FF6A6A;
+$color-placeholder: #CCC;
 
-.itsa-input textarea {
-    width: 100% !important;
-    display: block !important;
-    margin: 0 !important;
+.itsa-input {
+
+    textarea {
+        width: 100% !important;
+        display: block !important;
+        margin: 0 !important;
+    }
+    textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: $color-placeholder;
+    }
+    textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $color-placeholder;
+        opacity:  1;
+    }
+    textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $color-placeholder;
+        opacity:  1;
+    }
+    textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $color-placeholder;
+    }
+    textarea:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+        color: $color-placeholder;
+    }
 }
 
 .itsa-input-error textarea {
