@@ -1,0 +1,16 @@
+$color-error-border: #FF6A6A;
+
+.itsa-input textarea {
+    width: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+}
+
+.itsa-input-error textarea {
+    border-color: $color-error-border !important;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -ms-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}
