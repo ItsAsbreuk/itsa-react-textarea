@@ -144,6 +144,17 @@
         {
             "file": "lib/component.jsx",
             "line": 96,
+            "description": "The `onBlur` function, when happening on the DOM-Element.",
+            "itemtype": "property",
+            "name": "onChange",
+            "type": "Function",
+            "since": "0.1.0",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 105,
             "description": "The `onChange` function, which should update the `state`.",
             "itemtype": "property",
             "name": "onChange",
@@ -154,7 +165,29 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 105,
+            "line": 114,
+            "description": "The `onClick` function, when happening on the DOM-Element.",
+            "itemtype": "property",
+            "name": "onChange",
+            "type": "Function",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 123,
+            "description": "The `onFocus` function, when happening on the DOM-Element.",
+            "itemtype": "property",
+            "name": "onChange",
+            "type": "Function",
+            "since": "0.1.0",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 132,
             "description": "The `placeholder` for the element.",
             "itemtype": "property",
             "name": "placeholder",
@@ -165,7 +198,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 114,
+            "line": 141,
             "description": "The tabindex of the Component.",
             "itemtype": "property",
             "name": "type",
@@ -176,7 +209,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 123,
+            "line": 150,
             "description": "Whether the property is validated right.",
             "itemtype": "property",
             "name": "validated",
@@ -187,7 +220,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 132,
+            "line": 159,
             "description": "The `value` of the input-element.",
             "itemtype": "property",
             "name": "value",
@@ -198,7 +231,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 142,
+            "line": 169,
             "description": "componentDidMount will call `this.activatePlaces()`;",
             "itemtype": "method",
             "name": "componentDidMount",
@@ -208,7 +241,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 149,
+            "line": 176,
             "description": "Returns the rendered React-Element that serves as the source dom-element",
             "itemtype": "method",
             "name": "element",
@@ -228,7 +261,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 161,
+            "line": 188,
             "description": "Gets the Component\"s internal state. Note, that the this is NOT Redux\"s state.",
             "itemtype": "method",
             "name": "getInitialState",
@@ -241,7 +274,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 169,
+            "line": 196,
             "description": "Sets the focus on the Component.",
             "itemtype": "method",
             "name": "focus",
@@ -252,7 +285,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 177,
+            "line": 204,
             "description": "The method that is called whenever the input-Element changes its value.\nWill update the Redux-store (signupuser.homeaddress);",
             "itemtype": "method",
             "name": "handleChange",
@@ -269,7 +302,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 186,
+            "line": 213,
             "description": "The method that is called whenever the input-Element gets the focus.\nIt will change its internal state, so that the css looks right and\nalso any validation-messages disappear.",
             "itemtype": "method",
             "name": "handleFocus",
@@ -286,7 +319,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 196,
+            "line": 223,
             "description": "The method that is called whenever the input-Element gets blurred.\nIt will change its internal state, so that the css looks right and\nalso any validation-messages appear.",
             "itemtype": "method",
             "name": "handleBlur",
@@ -303,7 +336,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 206,
+            "line": 233,
             "description": "React render-method --> renderes the Component.",
             "itemtype": "method",
             "name": "render",

@@ -177,6 +177,15 @@ const Textarea = React.createClass({
         name: PropTypes.string,
 
         /**
+         * The &#x60;onBlur&#x60; function, when happening on the DOM-Element.
+         *
+         * @property onChange
+         * @type Function
+         * @since 0.1.0
+        */
+        onBlur: PropTypes.func,
+
+        /**
          * The &#x60;onChange&#x60; function, which should update the &#x60;state&#x60;.
          *
          * @property onChange
@@ -184,6 +193,24 @@ const Textarea = React.createClass({
          * @since 0.0.1
         */
         onChange: PropTypes.func.isRequired,
+
+        /**
+         * The &#x60;onClick&#x60; function, when happening on the DOM-Element.
+         *
+         * @property onChange
+         * @type Function
+         * @since 0.0.1
+        */
+        onClick: PropTypes.func,
+
+        /**
+         * The &#x60;onFocus&#x60; function, when happening on the DOM-Element.
+         *
+         * @property onChange
+         * @type Function
+         * @since 0.1.0
+        */
+        onFocus: PropTypes.func,
 
         /**
          * The &#x60;placeholder&#x60; for the element.

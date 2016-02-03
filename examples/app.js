@@ -22149,6 +22149,7 @@
 
 	"use strict";
 
+	__webpack_require__(18);
 	__webpack_require__(23);
 	module.exports = __webpack_require__(183);
 
@@ -22262,6 +22263,15 @@
 	    name: _react.PropTypes.string,
 
 	    /**
+	     * The `onBlur` function, when happening on the DOM-Element.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onBlur: _react.PropTypes.func,
+
+	    /**
 	     * The `onChange` function, which should update the `state`.
 	     *
 	     * @property onChange
@@ -22269,6 +22279,24 @@
 	     * @since 0.0.1
 	    */
 	    onChange: _react.PropTypes.func.isRequired,
+
+	    /**
+	     * The `onClick` function, when happening on the DOM-Element.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.0.1
+	    */
+	    onClick: _react.PropTypes.func,
+
+	    /**
+	     * The `onFocus` function, when happening on the DOM-Element.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onFocus: _react.PropTypes.func,
 
 	    /**
 	     * The `placeholder` for the element.
