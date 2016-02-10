@@ -182,6 +182,7 @@ const Textarea = React.createClass({
      * @since 0.0.4
      */
     element(inputProps) {
+        inputProps["aria-multiline"] = true;
         return (<textarea {...inputProps} />);
     },
 

@@ -1,6 +1,6 @@
 {
   "name": "itsa-react-textarea",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "itsa-react-textarea",
   "author": [
     {
@@ -30,7 +30,7 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "itsa-react-input": "^0.0.8",
+    "itsa-react-input": "^0.2.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   },
@@ -47,8 +47,8 @@
     "eslint-plugin-react": "^3.15.0",
     "file-loader": "^0.8.5",
     "istanbul": "^0.3.0",
-    "itsa-react-checkbox": "^0.2.0",
-    "itsa-react-maskedinput": "0.0.1",
+    "itsa-react-checkbox": "^0.3.1",
+    "itsa-react-maskedinput": "0.1.1",
     "js-ext": "itsa/js-ext",
     "jsdom": "^7.2.2",
     "jsdom-global": "^1.6.1",
