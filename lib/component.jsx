@@ -17,6 +17,8 @@
 import React, {PropTypes} from "react";
 import Input from "itsa-react-input";
 
+const MAIN_CLASS = "itsa-textarea";
+
 const Textarea = React.createClass({
 
     propTypes: {
@@ -94,15 +96,6 @@ const Textarea = React.createClass({
         name: PropTypes.string,
 
         /**
-         * The `onBlur` function, when happening on the DOM-Element.
-         *
-         * @property onChange
-         * @type Function
-         * @since 0.1.0
-        */
-        onBlur: PropTypes.func,
-
-        /**
          * The `onChange` function, which should update the `state`.
          *
          * @property onChange
@@ -110,24 +103,6 @@ const Textarea = React.createClass({
          * @since 0.0.1
         */
         onChange: PropTypes.func.isRequired,
-
-        /**
-         * The `onClick` function, when happening on the DOM-Element.
-         *
-         * @property onChange
-         * @type Function
-         * @since 0.0.1
-        */
-        onClick: PropTypes.func,
-
-        /**
-         * The `onFocus` function, when happening on the DOM-Element.
-         *
-         * @property onChange
-         * @type Function
-         * @since 0.1.0
-        */
-        onFocus: PropTypes.func,
 
         /**
          * The `placeholder` for the element.
@@ -182,7 +157,6 @@ const Textarea = React.createClass({
      * @since 0.0.4
      */
     element(inputProps) {
-        inputProps["aria-multiline"] = true;
         return (<textarea {...inputProps} />);
     },
 
@@ -239,7 +213,9 @@ const Textarea = React.createClass({
      * @since 0.0.1
      */
     render() {
-        return <Input {...this.props} element={this.element} />;
+        const props = this.props,
+              className = (props.className ? props.className+' ' : '') + MAIN_CLASS;
+        return <Input {...props} className={className} element={this.element} />;
     }
 
 });

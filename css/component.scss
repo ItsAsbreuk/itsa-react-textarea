@@ -1,8 +1,11 @@
 $color-error-border: #FF6A6A;
 $color-placeholder: #CCC;
 
-.itsa-input {
+.itsa-textarea {
+    vertical-align: top;
+}
 
+.itsa-input {
     textarea {
         width: 100% !important;
         display: block !important;

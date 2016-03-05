@@ -2506,7 +2506,7 @@
 
 
 	// module
-	exports.push([module.id, ".itsa-input {\n  position: relative;\n  width: 15em;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box; }\n  .itsa-input input {\n    width: 100% !important;\n    display: block !important;\n    margin: 0 !important; }\n  .itsa-input input::-webkit-input-placeholder {\n    /* WebKit, Blink, Edge */\n    color: #CCC; }\n  .itsa-input input:-moz-placeholder {\n    /* Mozilla Firefox 4 to 18 */\n    color: #CCC;\n    opacity: 1; }\n  .itsa-input input::-moz-placeholder {\n    /* Mozilla Firefox 19+ */\n    color: #CCC;\n    opacity: 1; }\n  .itsa-input input:-ms-input-placeholder {\n    /* Internet Explorer 10-11 */\n    color: #CCC; }\n  .itsa-input input:placeholder-shown {\n    /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */\n    color: #CCC; }\n\n.itsa-input-required::after {\n  content: \"*\";\n  position: absolute;\n  font-size: 2em;\n  top: 0.1em;\n  right: 0;\n  color: #FF6A6A; }\n\n.itsa-input-feedback-success::after {\n  content: url(" + __webpack_require__(20) + ");\n  position: absolute;\n  top: 0.1em;\n  right: 0; }\n\n.itsa-input-inputbox {\n  position: relative; }\n\n.itsa-input-error input {\n  border-color: #FF6A6A !important;\n  -webkit-transition: all 0.2s ease-out 0s;\n  -moz-transition: all 0.2s ease-out 0s;\n  -ms-transition: all 0.2s ease-out 0s;\n  -o-transition: all 0.2s ease-out 0s;\n  transition: all 0.2s ease-out 0s; }\n\n.itsa-input-error-text {\n  color: #F34F4F;\n  font-size: 0.8em;\n  line-height: 1em;\n  margin: 0;\n  opacity: 1;\n  position: absolute;\n  z-index: 1;\n  background-color: #F9F9F9;\n  border: 1px solid #FF6A6A;\n  bottom: -0.7em;\n  left: auto;\n  padding: 0.15em 0.4em 0.1em;\n  right: 0.2em;\n  -webkit-transition: all 0.2s ease-out 0s;\n  -moz-transition: all 0.2s ease-out 0s;\n  -ms-transition: all 0.2s ease-out 0s;\n  -o-transition: all 0.2s ease-out 0s;\n  transition: all 0.2s ease-out 0s; }\n\n.itsa-input-help-text {\n  color: #999;\n  font-size: 0.8em;\n  margin: 0.2em 0 0.4em; }\n\n.itsa-input-required-msg-before,\n.itsa-input-required-msg-after {\n  position: relative;\n  margin-top: 1em; }\n\n.itsa-input-required-msg-before {\n  padding-left: 1em; }\n\n.itsa-input-required-msg-after {\n  padding-right: 1em; }\n\n.itsa-input-required-msg-before::before,\n.itsa-input-required-msg-after::after {\n  position: absolute;\n  content: \"*\";\n  font-size: 2em;\n  top: 0;\n  color: #FF6A6A; }\n\n.itsa-input-required-msg-before::before {\n  left: 0; }\n\n.itsa-input-required-msg-after::after {\n  right: 0; }\n", ""]);
+	exports.push([module.id, ".itsa-input {\n  position: relative;\n  width: 15em;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box; }\n  .itsa-input input {\n    width: 100% !important;\n    display: block !important;\n    margin: 0 !important;\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box; }\n  .itsa-input input::-webkit-input-placeholder {\n    /* WebKit, Blink, Edge */\n    color: #CCC; }\n  .itsa-input input:-moz-placeholder {\n    /* Mozilla Firefox 4 to 18 */\n    color: #CCC;\n    opacity: 1; }\n  .itsa-input input::-moz-placeholder {\n    /* Mozilla Firefox 19+ */\n    color: #CCC;\n    opacity: 1; }\n  .itsa-input input:-ms-input-placeholder {\n    /* Internet Explorer 10-11 */\n    color: #CCC; }\n  .itsa-input input:placeholder-shown {\n    /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */\n    color: #CCC; }\n\n.itsa-input-required::after {\n  content: \"*\";\n  position: absolute;\n  font-size: 2em;\n  top: 0.1em;\n  right: 0;\n  color: #FF6A6A; }\n\n.itsa-input-feedback-success::after {\n  content: url(" + __webpack_require__(20) + ");\n  position: absolute;\n  top: 0.1em;\n  right: 0; }\n\n.itsa-input-inputbox {\n  position: relative; }\n\n.itsa-input-error input {\n  border-color: #FF6A6A !important;\n  -webkit-transition: all 0.2s ease-out 0s;\n  -moz-transition: all 0.2s ease-out 0s;\n  -ms-transition: all 0.2s ease-out 0s;\n  -o-transition: all 0.2s ease-out 0s;\n  transition: all 0.2s ease-out 0s; }\n\n.itsa-input-error-text {\n  color: #F34F4F;\n  font-size: 0.8em;\n  line-height: 1em;\n  margin: 0;\n  opacity: 1;\n  position: absolute;\n  z-index: 1;\n  background-color: #F9F9F9;\n  border: 1px solid #FF6A6A;\n  bottom: -0.7em;\n  left: auto;\n  padding: 0.15em 0.4em 0.1em;\n  right: 0.2em;\n  -webkit-transition: all 0.2s ease-out 0s;\n  -moz-transition: all 0.2s ease-out 0s;\n  -ms-transition: all 0.2s ease-out 0s;\n  -o-transition: all 0.2s ease-out 0s;\n  transition: all 0.2s ease-out 0s; }\n\n.itsa-input-help-text {\n  color: #999;\n  font-size: 0.8em;\n  margin: 0.2em 0 0.4em; }\n\n.itsa-input-required-msg-before,\n.itsa-input-required-msg-after {\n  position: relative;\n  margin-top: 1em; }\n\n.itsa-input-required-msg-before {\n  padding-left: 1em; }\n\n.itsa-input-required-msg-after {\n  padding-right: 1em; }\n\n.itsa-input-required-msg-before::before,\n.itsa-input-required-msg-after::after {\n  position: absolute;\n  content: \"*\";\n  font-size: 2em;\n  top: 0;\n  color: #FF6A6A; }\n\n.itsa-input-required-msg-before::before {\n  left: 0; }\n\n.itsa-input-required-msg-after::after {\n  right: 0; }\n", ""]);
 
 	// exports
 
@@ -2515,7 +2515,7 @@
 /* 20 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIycHgiIGhlaWdodD0iMjJweCIgdmlld0JveD0iMCAwIDIyIDIyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy4zICgxMTk3MCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+aWNvbi1zdWNjZXNzIGNvcHkgNDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJtb2JpbGUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPgogICAgICAgIDxnIGlkPSJTaWduLXVwLWlQaG9uZS02LXN1Y2Nlc3MiIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMTUuMDAwMDAwLCAtMjQ1LjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iaWNvbi1zdWNjZXNzLWNvcHktNCIgc2tldGNoOnR5cGU9Ik1TTGF5ZXJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzE1LjAwMDAwMCwgMjQ1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGVsbGlwc2UgaWQ9Ik92YWwtMSIgZmlsbD0iIzhDQkM0NSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgY3g9IjEwLjcwNzY5MjMiIGN5PSIxMC43MTQyODU3IiByeD0iMTAuNzA3NjkyMyIgcnk9IjEwLjcxNDI4NTciPjwvZWxsaXBzZT4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik01LjYxMDI2MjY4LDEyLjkyMzU3OCBMNi42MjcyMjQzOCwxMS43NzU3OTUgTDkuMjUwOTk4NjMsMTMuNTY3MDgxOCBMMTUuMzg2ODAwNSw2LjcyNTA2NjM4IEwxNi42OTc0Mjk2LDcuNjExNzgzNzEgTDkuNTM2OTk2ODEsMTUuNTk2MzYyMiBMNS42MTAyNjI2OCwxMi45MjM1NzggTDUuNjEwMjYyNjgsMTIuOTIzNTc4IFoiIGlkPSLinJMtY29weSIgZmlsbD0iI0ZGRkZGRiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4="
+	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjEuMmVtIiBoZWlnaHQ9IjEuMmVtIiB2aWV3Qm94PSIwIDAgMjIgMjIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzLjMgKDExOTcwKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5pY29uLXN1Y2Nlc3MgY29weSA0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9Im1vYmlsZSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9IlNpZ24tdXAtaVBob25lLTYtc3VjY2VzcyIgc2tldGNoOnR5cGU9Ik1TQXJ0Ym9hcmRHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMxNS4wMDAwMDAsIC0yNDUuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJpY29uLXN1Y2Nlc3MtY29weS00IiBza2V0Y2g6dHlwZT0iTVNMYXllckdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMTUuMDAwMDAwLCAyNDUuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZWxsaXBzZSBpZD0iT3ZhbC0xIiBmaWxsPSIjOENCQzQ1IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBjeD0iMTAuNzA3NjkyMyIgY3k9IjEwLjcxNDI4NTciIHJ4PSIxMC43MDc2OTIzIiByeT0iMTAuNzE0Mjg1NyI+PC9lbGxpcHNlPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTUuNjEwMjYyNjgsMTIuOTIzNTc4IEw2LjYyNzIyNDM4LDExLjc3NTc5NSBMOS4yNTA5OTg2MywxMy41NjcwODE4IEwxNS4zODY4MDA1LDYuNzI1MDY2MzggTDE2LjY5NzQyOTYsNy42MTE3ODM3MSBMOS41MzY5OTY4MSwxNS41OTYzNjIyIEw1LjYxMDI2MjY4LDEyLjkyMzU3OCBMNS42MTAyNjI2OCwxMi45MjM1NzggWiIgaWQ9IuKcky1jb3B5IiBmaWxsPSIjRkZGRkZGIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="
 
 /***/ },
 /* 21 */
@@ -2592,7 +2592,7 @@
 
 
 	// module
-	exports.push([module.id, ".itsa-input textarea {\n  width: 100% !important;\n  display: block !important;\n  margin: 0 !important; }\n\n.itsa-input textarea::-webkit-input-placeholder {\n  /* WebKit, Blink, Edge */\n  color: #CCC; }\n\n.itsa-input textarea:-moz-placeholder {\n  /* Mozilla Firefox 4 to 18 */\n  color: #CCC;\n  opacity: 1; }\n\n.itsa-input textarea::-moz-placeholder {\n  /* Mozilla Firefox 19+ */\n  color: #CCC;\n  opacity: 1; }\n\n.itsa-input textarea:-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: #CCC; }\n\n.itsa-input textarea:placeholder-shown {\n  /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */\n  color: #CCC; }\n\n.itsa-input-error textarea {\n  border-color: #FF6A6A !important;\n  -webkit-transition: all 0.2s ease-out 0s;\n  -moz-transition: all 0.2s ease-out 0s;\n  -ms-transition: all 0.2s ease-out 0s;\n  -o-transition: all 0.2s ease-out 0s;\n  transition: all 0.2s ease-out 0s; }\n", ""]);
+	exports.push([module.id, ".itsa-textarea {\n  vertical-align: top; }\n\n.itsa-input textarea {\n  width: 100% !important;\n  display: block !important;\n  margin: 0 !important; }\n\n.itsa-input textarea::-webkit-input-placeholder {\n  /* WebKit, Blink, Edge */\n  color: #CCC; }\n\n.itsa-input textarea:-moz-placeholder {\n  /* Mozilla Firefox 4 to 18 */\n  color: #CCC;\n  opacity: 1; }\n\n.itsa-input textarea::-moz-placeholder {\n  /* Mozilla Firefox 19+ */\n  color: #CCC;\n  opacity: 1; }\n\n.itsa-input textarea:-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: #CCC; }\n\n.itsa-input textarea:placeholder-shown {\n  /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */\n  color: #CCC; }\n\n.itsa-input-error textarea {\n  border-color: #FF6A6A !important;\n  -webkit-transition: all 0.2s ease-out 0s;\n  -moz-transition: all 0.2s ease-out 0s;\n  -ms-transition: all 0.2s ease-out 0s;\n  -o-transition: all 0.2s ease-out 0s;\n  transition: all 0.2s ease-out 0s; }\n", ""]);
 
 	// exports
 
@@ -22185,8 +22185,248 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var MAIN_CLASS = "itsa-textarea";
+
 	var Textarea = _react2.default.createClass({
 	  displayName: "Textarea",
+
+	  propTypes: {
+	    /**
+	     * Whether to autofocus the Component.
+	     *
+	     * @property autoFocus
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    autoFocus: _react.PropTypes.bool,
+
+	    /**
+	     * The error-message that appears when the element is wrong validated.
+	     *
+	     * @property errorMsg
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    errorMsg: _react.PropTypes.string,
+
+	    /**
+	     * Whether the parent-form has been validated.
+	     * This value is needed to determine if the validate-status should be set.
+	     *
+	     * @property formValidated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    formValidated: _react.PropTypes.bool,
+
+	    /**
+	     * The text that should appear when the element is wrong validated.
+	     *
+	     * @property helpText
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    helpText: _react.PropTypes.string,
+
+	    /**
+	     * The `id` of the element.
+	     *
+	     * @property id
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    id: _react.PropTypes.string,
+
+	    /**
+	     * Whether to mark the Component when successfully validated.
+	     *
+	     * @property markValidated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    markValidated: _react.PropTypes.bool,
+
+	    /**
+	     * Whether the Component should show an validate-reclamation (star)
+	     *
+	     * @property markValidated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    markRequired: _react.PropTypes.bool,
+
+	    /**
+	     * The `name` for the element.
+	     *
+	     * @property name
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    name: _react.PropTypes.string,
+
+	    /**
+	     * The `onChange` function, which should update the `state`.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.0.1
+	    */
+	    onChange: _react.PropTypes.func.isRequired,
+
+	    /**
+	     * The `placeholder` for the element.
+	     *
+	     * @property placeholder
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    placeholder: _react.PropTypes.string,
+
+	    /**
+	     * The tabindex of the Component.
+	     *
+	     * @property type
+	     * @type Number
+	     * @since 0.0.1
+	    */
+	    tabIndex: _react.PropTypes.number,
+
+	    /**
+	     * Whether the property is validated right.
+	     *
+	     * @property validated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    validated: _react.PropTypes.bool,
+
+	    /**
+	     * The `value` of the input-element.
+	     *
+	     * @property value
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    value: _react.PropTypes.string
+	  },
+
+	  /**
+	   * componentDidMount will call `this.activatePlaces()`;
+	   *
+	   * @method componentDidMount
+	   * @since 0.0.1
+	   */
+
+	  /**
+	   * Returns the rendered React-Element that serves as the source dom-element
+	   *
+	   * @method element
+	   * @param props {Object} props to be passed through to the Component
+	   * @return ReactComponent
+	   * @since 0.0.4
+	   */
+	  element: function element(inputProps) {
+	    return _react2.default.createElement("textarea", inputProps);
+	  },
+
+	  /**
+	   * Gets the Component"s internal state. Note, that the this is NOT Redux"s state.
+	   *
+	   * @method getInitialState
+	   * @return Object the Component internal initial state
+	   * @since 0.0.1
+	   */
+
+	  /**
+	   * Sets the focus on the Component.
+	   *
+	   * @method focus
+	   * @chainable
+	   * @since 0.0.1
+	   */
+
+	  /**
+	   * The method that is called whenever the input-Element changes its value.
+	   * Will update the Redux-store (signupuser.homeaddress);
+	   *
+	   * @method handleChange
+	   * @param e {Object} event-payload
+	   * @since 0.0.1
+	   */
+
+	  /**
+	   * The method that is called whenever the input-Element gets the focus.
+	   * It will change its internal state, so that the css looks right and
+	   * also any validation-messages disappear.
+	   *
+	   * @method handleFocus
+	   * @param e {Object} event-payload
+	   * @since 0.0.1
+	   */
+
+	  /**
+	   * The method that is called whenever the input-Element gets blurred.
+	   * It will change its internal state, so that the css looks right and
+	   * also any validation-messages appear.
+	   *
+	   * @method handleBlur
+	   * @param e {Object} event-payload
+	   * @since 0.0.1
+	   */
+
+	  /**
+	   * React render-method --> renderes the Component.
+	   *
+	   * @method render
+	   * @return ReactComponent
+	   * @since 0.0.1
+	   */
+	  render: function render() {
+	    var props = this.props,
+	        className = (props.className ? props.className + ' ' : '') + MAIN_CLASS;
+	    return _react2.default.createElement(_itsaReactInput2.default, _extends({}, props, { className: className, element: this.element }));
+	  }
+	});
+
+	module.exports = Textarea;
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	/**
+	 * Description here
+	 *
+	 *
+	 *
+	 * <i>Copyright (c) 2016 ItsAsbreuk - http://itsasbreuk.nl</i><br>
+	 * New BSD License - http://choosealicense.com/licenses/bsd-3-clause/
+	 *
+	 *
+	 * @module itsa-react-input
+	 * @class Input
+	 * @since 0.0.1
+	*/
+
+	var _react = __webpack_require__(25);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(181);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var MAIN_CLASS = "itsa-input",
+	    MAIN_CLASS_PREFIX = MAIN_CLASS + "-",
+	    SPACED_MAIN_CLASS_PREFIX = " " + MAIN_CLASS_PREFIX,
+	    ELEMENT = "element";
+
+	var Input = _react2.default.createClass({
+	  displayName: "Input",
 
 	  propTypes: {
 	    /**
@@ -22299,6 +22539,33 @@
 	    onFocus: _react.PropTypes.func,
 
 	    /**
+	     * The `onKeyDown` function, when happening on the DOM-Element.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onKeyDown: _react.PropTypes.func,
+
+	    /**
+	     * The `onKeyPress` function, when happening on the DOM-Element.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onKeyPress: _react.PropTypes.func,
+
+	    /**
+	     * The `onKeyUp` function, when happening on the DOM-Element.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onKeyUp: _react.PropTypes.func,
+
+	    /**
 	     * The `placeholder` for the element.
 	     *
 	     * @property placeholder
@@ -22306,6 +22573,15 @@
 	     * @since 0.0.1
 	    */
 	    placeholder: _react.PropTypes.string,
+
+	    /**
+	     * The `type` of the input-element.
+	     *
+	     * @property type
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    type: _react.PropTypes.string,
 
 	    /**
 	     * The tabindex of the Component.
@@ -22341,6 +22617,12 @@
 	   * @method componentDidMount
 	   * @since 0.0.1
 	   */
+	  componentDidMount: function componentDidMount() {
+	    var instance = this,
+	        domNode = _reactDom2.default.findDOMNode(instance);
+	    instance._inputNode = domNode.querySelector("." + MAIN_CLASS_PREFIX + ELEMENT);
+	    instance.props.autoFocus && instance.focus();
+	  },
 
 	  /**
 	   * Returns the rendered React-Element that serves as the source dom-element
@@ -22350,8 +22632,8 @@
 	   * @return ReactComponent
 	   * @since 0.0.4
 	   */
-	  element: function element(inputProps) {
-	    return _react2.default.createElement("textarea", inputProps);
+	  element: function element(props) {
+	    return _react2.default.createElement("input", props);
 	  },
 
 	  /**
@@ -22361,6 +22643,11 @@
 	   * @return Object the Component internal initial state
 	   * @since 0.0.1
 	   */
+	  getInitialState: function getInitialState() {
+	    return {
+	      focussed: !!this.props.autoFocus
+	    };
+	  },
 
 	  /**
 	   * Sets the focus on the Component.
@@ -22369,25 +22656,10 @@
 	   * @chainable
 	   * @since 0.0.1
 	   */
-
-	  /**
-	   * The method that is called whenever the input-Element changes its value.
-	   * Will update the Redux-store (signupuser.homeaddress);
-	   *
-	   * @method handleChange
-	   * @param e {Object} event-payload
-	   * @since 0.0.1
-	   */
-
-	  /**
-	   * The method that is called whenever the input-Element gets the focus.
-	   * It will change its internal state, so that the css looks right and
-	   * also any validation-messages disappear.
-	   *
-	   * @method handleFocus
-	   * @param e {Object} event-payload
-	   * @since 0.0.1
-	   */
+	  focus: function focus() {
+	    this._inputNode.focus();
+	    return this;
+	  },
 
 	  /**
 	   * The method that is called whenever the input-Element gets blurred.
@@ -22398,6 +22670,89 @@
 	   * @param e {Object} event-payload
 	   * @since 0.0.1
 	   */
+	  handleBlur: function handleBlur(e) {
+	    this.changed = false;
+	    this.setState({
+	      focussed: false
+	    });
+	    this.props.onBlur && this.props.onBlur(e);
+	  },
+
+	  /**
+	   * The method that is called whenever the input-Element changes its value.
+	   * Will update the Redux-store (signupuser.homeaddress);
+	   *
+	   * @method handleChange
+	   * @param e {Object} event-payload
+	   * @since 0.0.1
+	   */
+	  handleChange: function handleChange(e) {
+	    if (!this.props.readOnly) {
+	      this.changed = true;
+	      this.props.onChange(e);
+	    }
+	  },
+
+	  /**
+	   * The method that is called whenever the input-Element gets clicked.
+	   *
+	   * @method handleClick
+	   * @param e {Object} event-payload
+	   * @since 0.1.0
+	   */
+	  handleClick: function handleClick(e) {
+	    this.props.onClick(e);
+	  },
+
+	  /**
+	   * The method that is called whenever the input-Element gets the focus.
+	   * It will change its internal state, so that the css looks right and
+	   * also any validation-messages disappear.
+	   *
+	   * @method handleFocus
+	   * @param e {Object} event-payload
+	   * @since 0.0.1
+	   */
+	  handleFocus: function handleFocus() {
+	    this.changed = false;
+	    this.setState({
+	      focussed: true
+	    });
+	    this.props.onFocus && this.props.onFocus(e);
+	  },
+
+	  /**
+	   * The method that is called whenever the input-Element recieves a keyDown.
+	   *
+	   * @method handleKeyDown
+	   * @param e {Object} event-payload
+	   * @since 0.1.0
+	   */
+	  handleKeyDown: function handleKeyDown(e) {
+	    this.props.onKeyDown(e);
+	  },
+
+	  /**
+	   * The method that is called whenever the input-Element recieves a keyPress.
+	   *
+	   * @method handleKeyPress
+	   * @param e {Object} event-payload
+	   * @since 0.1.0
+	   */
+	  handleKeyPress: function handleKeyPress(e) {
+	    this.props.onKeyPress(e);
+	  },
+
+	  /**
+	   * The method that is called whenever the input-Element recieves a keyUp.
+	   *
+	   * @method handleKeyUp
+	   * @param e {Object} event-payload
+	   * @since 0.1.0
+	   */
+	  handleKeyUp: function handleKeyUp(e) {
+	    this.props.onKeyUp(e);
+	  },
 
 	  /**
 	   * React render-method --> renderes the Component.
@@ -22407,351 +22762,106 @@
 	   * @since 0.0.1
 	   */
 	  render: function render() {
-	    return _react2.default.createElement(_itsaReactInput2.default, _extends({}, this.props, { element: this.element }));
-	  }
-	});
+	    var wrapperClass = MAIN_CLASS,
+	        label = undefined,
+	        errorMsg = undefined,
+	        help = undefined,
+	        labelClass = undefined,
+	        inputProps = undefined,
+	        maskComponent = undefined,
+	        ariaRequired = undefined;
+	    var instance = this,
+	        props = instance.props,
+	        element = props.element || instance.element,
+	        value = props.value || "",
+	        type = props.type || "text",
+	        readOnly = props.readOnly || false,
+	        errored = !instance.changed && props.validated === false && props.formValidated;
 
-	module.exports = Textarea;
+	    props.className && (wrapperClass += " " + props.className);
+	    errored && (wrapperClass += SPACED_MAIN_CLASS_PREFIX + "error");
+	    instance.state.focused && (wrapperClass += SPACED_MAIN_CLASS_PREFIX + "focus");
 
-/***/ },
-/* 184 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	/**
-	 * Description here
-	 *
-	 *
-	 *
-	 * <i>Copyright (c) 2016 ItsAsbreuk - http://itsasbreuk.nl</i><br>
-	 * New BSD License - http://choosealicense.com/licenses/bsd-3-clause/
-	 *
-	 *
-	 * @module itsa-react-input
-	 * @class Input
-	 * @since 0.0.1
-	*/
-
-	var _react = __webpack_require__(25);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(181);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var MAIN_CLASS = "itsa-input",
-	    MAIN_CLASS_PREFIX = MAIN_CLASS + "-",
-	    SPACED_MAIN_CLASS_PREFIX = " " + MAIN_CLASS_PREFIX,
-	    ELEMENT = "element";
-
-	var Input = _react2.default.createClass({
-	    displayName: "Input",
-
-	    propTypes: {
-	        /**
-	         * Whether to autofocus the Component.
-	         *
-	         * @property autoFocus
-	         * @type Boolean
-	         * @since 0.0.1
-	        */
-	        autoFocus: _react.PropTypes.bool,
-
-	        /**
-	         * The error-message that appears when the element is wrong validated.
-	         *
-	         * @property errorMsg
-	         * @type String
-	         * @since 0.0.1
-	        */
-	        errorMsg: _react.PropTypes.string,
-
-	        /**
-	         * Whether the parent-form has been validated.
-	         * This value is needed to determine if the validate-status should be set.
-	         *
-	         * @property formValidated
-	         * @type Boolean
-	         * @since 0.0.1
-	        */
-	        formValidated: _react.PropTypes.bool,
-
-	        /**
-	         * The text that should appear when the element is wrong validated.
-	         *
-	         * @property helpText
-	         * @type String
-	         * @since 0.0.1
-	        */
-	        helpText: _react.PropTypes.string,
-
-	        /**
-	         * The `id` of the element.
-	         *
-	         * @property id
-	         * @type String
-	         * @since 0.0.1
-	        */
-	        id: _react.PropTypes.string,
-
-	        /**
-	         * Whether to mark the Component when successfully validated.
-	         *
-	         * @property markValidated
-	         * @type Boolean
-	         * @since 0.0.1
-	        */
-	        markValidated: _react.PropTypes.bool,
-
-	        /**
-	         * Whether the Component should show an validate-reclamation (star)
-	         *
-	         * @property markValidated
-	         * @type Boolean
-	         * @since 0.0.1
-	        */
-	        markRequired: _react.PropTypes.bool,
-
-	        /**
-	         * The `name` for the element.
-	         *
-	         * @property name
-	         * @type String
-	         * @since 0.0.1
-	        */
-	        name: _react.PropTypes.string,
-
-	        /**
-	         * The `onChange` function, which should update the `state`.
-	         *
-	         * @property onChange
-	         * @type Function
-	         * @since 0.0.1
-	        */
-	        onChange: _react.PropTypes.func.isRequired,
-
-	        /**
-	         * The `placeholder` for the element.
-	         *
-	         * @property placeholder
-	         * @type String
-	         * @since 0.0.1
-	        */
-	        placeholder: _react.PropTypes.string,
-
-	        /**
-	         * The `type` of the input-element.
-	         *
-	         * @property type
-	         * @type String
-	         * @since 0.0.1
-	        */
-	        type: _react.PropTypes.string,
-
-	        /**
-	         * The tabindex of the Component.
-	         *
-	         * @property type
-	         * @type Number
-	         * @since 0.0.1
-	        */
-	        tabIndex: _react.PropTypes.number,
-
-	        /**
-	         * Whether the property is validated right.
-	         *
-	         * @property validated
-	         * @type Boolean
-	         * @since 0.0.1
-	        */
-	        validated: _react.PropTypes.bool,
-
-	        /**
-	         * The `value` of the input-element.
-	         *
-	         * @property value
-	         * @type String
-	         * @since 0.0.1
-	        */
-	        value: _react.PropTypes.string
-	    },
-
-	    /**
-	     * componentDidMount will call `this.activatePlaces()`;
-	     *
-	     * @method componentDidMount
-	     * @since 0.0.1
-	     */
-	    componentDidMount: function componentDidMount() {
-	        var instance = this,
-	            domNode = _reactDom2.default.findDOMNode(instance);
-	        instance._inputNode = domNode.querySelector("." + MAIN_CLASS_PREFIX + ELEMENT);
-	        instance.props.autoFocus && instance.focus();
-	    },
-
-	    /**
-	     * Returns the rendered React-Element that serves as the source dom-element
-	     *
-	     * @method element
-	     * @param props {Object} props to be passed through to the Component
-	     * @return ReactComponent
-	     * @since 0.0.4
-	     */
-	    element: function element(props) {
-	        return _react2.default.createElement("input", props);
-	    },
-
-	    /**
-	     * Gets the Component"s internal state. Note, that the this is NOT Redux"s state.
-	     *
-	     * @method getInitialState
-	     * @return Object the Component internal initial state
-	     * @since 0.0.1
-	     */
-	    getInitialState: function getInitialState() {
-	        return {
-	            focussed: !!this.props.autoFocus
-	        };
-	    },
-
-	    /**
-	     * Sets the focus on the Component.
-	     *
-	     * @method focus
-	     * @chainable
-	     * @since 0.0.1
-	     */
-	    focus: function focus() {
-	        this._inputNode.focus();
-	        return this;
-	    },
-
-	    /**
-	     * The method that is called whenever the input-Element changes its value.
-	     * Will update the Redux-store (signupuser.homeaddress);
-	     *
-	     * @method handleChange
-	     * @param e {Object} event-payload
-	     * @since 0.0.1
-	     */
-	    handleChange: function handleChange(e) {
-	        if (!this.props.readOnly) {
-	            this.changed = true;
-	            this.props.onChange(e);
-	        }
-	    },
-
-	    /**
-	     * The method that is called whenever the input-Element gets the focus.
-	     * It will change its internal state, so that the css looks right and
-	     * also any validation-messages disappear.
-	     *
-	     * @method handleFocus
-	     * @param e {Object} event-payload
-	     * @since 0.0.1
-	     */
-	    handleFocus: function handleFocus() {
-	        this.changed = false;
-	        this.setState({
-	            focussed: true
-	        });
-	    },
-
-	    /**
-	     * The method that is called whenever the input-Element gets blurred.
-	     * It will change its internal state, so that the css looks right and
-	     * also any validation-messages appear.
-	     *
-	     * @method handleBlur
-	     * @param e {Object} event-payload
-	     * @since 0.0.1
-	     */
-	    handleBlur: function handleBlur() {
-	        this.changed = false;
-	        this.setState({
-	            focussed: false
-	        });
-	    },
-
-	    /**
-	     * React render-method --> renderes the Component.
-	     *
-	     * @method render
-	     * @return ReactComponent
-	     * @since 0.0.1
-	     */
-	    render: function render() {
-	        var wrapperClass = MAIN_CLASS,
-	            label = undefined,
-	            errorMsg = undefined,
-	            help = undefined,
-	            labelClass = undefined,
-	            inputProps = undefined,
-	            maskComponent = undefined;
-	        var instance = this,
-	            props = instance.props,
-	            element = props.element || instance.element,
-	            value = props.value || "",
-	            type = props.type || "text",
-	            errored = !instance.changed && props.validated === false && props.formValidated;
-
-	        props.className && (wrapperClass += " " + props.className);
-	        errored && (wrapperClass += SPACED_MAIN_CLASS_PREFIX + "error");
-	        instance.state.focused && (wrapperClass += SPACED_MAIN_CLASS_PREFIX + "focus");
-
-	        if (props.markValidated && !errored && !instance.state.focussed && !instance.changed && value && props.validated) {
-	            wrapperClass += SPACED_MAIN_CLASS_PREFIX + "feedback-success";
-	        } else if (props.markRequired && !value) {
-	            wrapperClass += SPACED_MAIN_CLASS_PREFIX + "required";
-	        }
-
-	        if (errored && props.errorMsg) {
-	            errorMsg = _react2.default.createElement(
-	                "div",
-	                { className: MAIN_CLASS_PREFIX + "error-text" },
-	                props.errorMsg
-	            );
-	        }
-
-	        if (props.helpText) {
-	            help = _react2.default.createElement(
-	                "div",
-	                { className: MAIN_CLASS_PREFIX + "help-text" },
-	                props.helpText
-	            );
-	        }
-
-	        inputProps = {
-	            className: MAIN_CLASS_PREFIX + ELEMENT,
-	            id: props.id,
-	            name: props.name,
-	            onBlur: instance.handleBlur,
-	            onChange: instance.handleChange,
-	            onFocus: instance.handleFocus,
-	            placeholder: props.placeholder,
-	            readOnly: props.readOnly || false,
-	            tabIndex: props.tabIndex || 1,
-	            type: type,
-	            value: value
-	        };
-
-	        return _react2.default.createElement(
-	            "div",
-	            { className: wrapperClass },
-	            label,
-	            _react2.default.createElement(
-	                "div",
-	                { className: MAIN_CLASS_PREFIX + "inputbox" },
-	                element.call(this, inputProps),
-	                errorMsg
-	            ),
-	            help
-	        );
+	    if (props.markValidated && !errored && !instance.state.focussed && !instance.changed && value && props.validated) {
+	      wrapperClass += SPACED_MAIN_CLASS_PREFIX + "feedback-success";
+	    } else if (props.markRequired && !value) {
+	      wrapperClass += SPACED_MAIN_CLASS_PREFIX + "required";
+	      ariaRequired = true;
 	    }
+
+	    if (errored && props.errorMsg) {
+	      errorMsg = _react2.default.createElement(
+	        "div",
+	        { className: MAIN_CLASS_PREFIX + "error-text" },
+	        props.errorMsg
+	      );
+	    }
+
+	    if (props.helpText) {
+	      help = _react2.default.createElement(
+	        "div",
+	        { className: MAIN_CLASS_PREFIX + "help-text" },
+	        props.helpText
+	      );
+	    }
+
+	    inputProps = {
+	      "aria-invalid": errored,
+	      "aria-readonly": readOnly,
+	      "aria-required": ariaRequired,
+	      className: MAIN_CLASS_PREFIX + ELEMENT,
+	      id: props.id,
+	      name: props.name,
+	      onBlur: instance.handleBlur,
+	      onChange: instance.handleChange,
+	      onClick: props.onClick && instance.handleClick,
+	      onFocus: instance.handleFocus,
+	      onKeyDown: props.onKeyDown && instance.handleKeyDown,
+	      onKeyPress: props.onKeyPress && instance.handleKeyPress,
+	      onKeyUp: props.onKeyUp && instance.handleKeyUp,
+	      placeholder: props.placeholder,
+	      role: "textbox",
+	      readOnly: readOnly,
+	      tabIndex: props.tabIndex || 1,
+	      type: type,
+	      value: value
+	    };
+
+	    // merge all data-props:
+	    instance._mergeDataAttrs(inputProps);
+
+	    return _react2.default.createElement(
+	      "div",
+	      { className: wrapperClass },
+	      label,
+	      _react2.default.createElement(
+	        "div",
+	        { className: MAIN_CLASS_PREFIX + "inputbox" },
+	        element.call(this, inputProps),
+	        errorMsg
+	      ),
+	      help
+	    );
+	  },
+
+	  /**
+	   * Merges the `data-*` attributes from props into the object
+	   *
+	   * @method _mergeDataAttrs
+	   * @param inputProps {object} the source props which will be extended
+	   * @private
+	   * @return object all the data-* attributes
+	   * @since 0.2.0
+	   */
+	  _mergeDataAttrs: function _mergeDataAttrs(inputProps) {
+	    var dataAttrs = {};
+	    var props = this.props,
+	        keys = Object.keys(props);
+
+	    keys.forEach(function (key) {
+	      key.substr(0, 5).toLowerCase() === "data-" && (inputProps[key] = props[key]);
+	    });
+	  }
 	});
 
 	module.exports = Input;
