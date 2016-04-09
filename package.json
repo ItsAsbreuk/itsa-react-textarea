@@ -1,6 +1,6 @@
 {
   "name": "itsa-react-textarea",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "itsa-react-textarea",
   "author": [
     {
@@ -30,7 +30,7 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "itsa-react-input": "^0.2.0",
+    "itsa-react-input": "^0.2.4",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   },
