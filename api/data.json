@@ -55,7 +55,7 @@
     "classitems": [
         {
             "file": "lib/component.jsx",
-            "line": 25,
+            "line": 26,
             "description": "Whether to autofocus the Component.",
             "itemtype": "property",
             "name": "autoFocus",
@@ -66,7 +66,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 34,
+            "line": 35,
             "description": "The error-message that appears when the element is wrong validated.",
             "itemtype": "property",
             "name": "errorMsg",
@@ -77,7 +77,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 43,
+            "line": 44,
             "description": "Whether the parent-form has been validated.\nThis value is needed to determine if the validate-status should be set.",
             "itemtype": "property",
             "name": "formValidated",
@@ -88,7 +88,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 53,
+            "line": 54,
             "description": "The text that should appear when the element is wrong validated.",
             "itemtype": "property",
             "name": "helpText",
@@ -99,7 +99,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 62,
+            "line": 63,
             "description": "The `id` of the element.",
             "itemtype": "property",
             "name": "id",
@@ -110,7 +110,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 71,
+            "line": 72,
             "description": "Whether to mark the Component when successfully validated.",
             "itemtype": "property",
             "name": "markValidated",
@@ -121,7 +121,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 80,
+            "line": 81,
             "description": "Whether the Component should show an validate-reclamation (star)",
             "itemtype": "property",
             "name": "markValidated",
@@ -132,7 +132,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 89,
+            "line": 90,
             "description": "The `name` for the element.",
             "itemtype": "property",
             "name": "name",
@@ -143,7 +143,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 98,
+            "line": 99,
             "description": "The `onChange` function, which should update the `state`.",
             "itemtype": "property",
             "name": "onChange",
@@ -154,7 +154,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 107,
+            "line": 108,
             "description": "The `placeholder` for the element.",
             "itemtype": "property",
             "name": "placeholder",
@@ -165,7 +165,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 116,
+            "line": 117,
             "description": "The tabindex of the Component.",
             "itemtype": "property",
             "name": "type",
@@ -176,7 +176,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 125,
+            "line": 126,
             "description": "Whether the property is validated right.",
             "itemtype": "property",
             "name": "validated",
@@ -187,7 +187,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 134,
+            "line": 135,
             "description": "The `value` of the input-element.",
             "itemtype": "property",
             "name": "value",
@@ -198,7 +198,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 144,
+            "line": 145,
             "description": "componentDidMount will call `this.activatePlaces()`;",
             "itemtype": "method",
             "name": "componentDidMount",
@@ -208,7 +208,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 151,
+            "line": 152,
             "description": "Returns the rendered React-Element that serves as the source dom-element",
             "itemtype": "method",
             "name": "element",
@@ -228,7 +228,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 163,
+            "line": 164,
             "description": "Gets the Component\"s internal state. Note, that the this is NOT Redux\"s state.",
             "itemtype": "method",
             "name": "getInitialState",
@@ -241,7 +241,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 171,
+            "line": 172,
             "description": "Sets the focus on the Component.",
             "itemtype": "method",
             "name": "focus",
@@ -252,7 +252,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 179,
+            "line": 180,
             "description": "The method that is called whenever the input-Element changes its value.\nWill update the Redux-store (signupuser.homeaddress);",
             "itemtype": "method",
             "name": "handleChange",
@@ -269,7 +269,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 188,
+            "line": 189,
             "description": "The method that is called whenever the input-Element gets the focus.\nIt will change its internal state, so that the css looks right and\nalso any validation-messages disappear.",
             "itemtype": "method",
             "name": "handleFocus",
@@ -286,7 +286,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 198,
+            "line": 199,
             "description": "The method that is called whenever the input-Element gets blurred.\nIt will change its internal state, so that the css looks right and\nalso any validation-messages appear.",
             "itemtype": "method",
             "name": "handleBlur",
@@ -303,7 +303,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 208,
+            "line": 209,
             "description": "React render-method --> renderes the Component.",
             "itemtype": "method",
             "name": "render",

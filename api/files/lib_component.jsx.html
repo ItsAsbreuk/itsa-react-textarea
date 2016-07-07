@@ -97,8 +97,9 @@
  * @since 0.0.1
 */
 
-import React, {PropTypes} from &quot;react&quot;;
-import Input from &quot;itsa-react-input&quot;;
+const React = require(&quot;react&quot;),
+    PropTypes = React.PropTypes,
+    Input = require(&quot;itsa-react-input&quot;);
 
 const MAIN_CLASS = &quot;itsa-textarea&quot;;
 
@@ -297,7 +298,7 @@ const Textarea = React.createClass({
      */
     render() {
         const props = this.props,
-              className = (props.className ? props.className+&#x27; &#x27; : &#x27;&#x27;) + MAIN_CLASS;
+            className = (props.className ? props.className+&#x27; &#x27; : &#x27;&#x27;) + MAIN_CLASS;
         return &lt;Input {...props} className={className} element={this.element} /&gt;;
     }
 

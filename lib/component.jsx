@@ -14,8 +14,9 @@
  * @since 0.0.1
 */
 
-import React, {PropTypes} from "react";
-import Input from "itsa-react-input";
+const React = require("react"),
+    PropTypes = React.PropTypes,
+    Input = require("itsa-react-input");
 
 const MAIN_CLASS = "itsa-textarea";
 
@@ -30,6 +31,15 @@ const Textarea = React.createClass({
          * @since 0.0.1
         */
         autoFocus: PropTypes.bool,
+
+        /**
+         * The class that should be set on the element
+         *
+         * @property className
+         * @type String
+         * @since 0.0.1
+        */
+        className: PropTypes.string,
 
         /**
          * The error-message that appears when the element is wrong validated.
@@ -114,6 +124,15 @@ const Textarea = React.createClass({
         placeholder: PropTypes.string,
 
         /**
+         * Inline style
+         *
+         * @property style
+         * @type object
+         * @since 0.0.1
+        */
+        style: PropTypes.object,
+
+        /**
          * The tabindex of the Component.
          *
          * @property type
@@ -158,6 +177,18 @@ const Textarea = React.createClass({
      */
     element(inputProps) {
         return (<textarea {...inputProps} />);
+    },
+
+    /**
+     * Sets the focus on the Component.
+     *
+     * @method focus
+     * @param [transitionTime] {Number} transition-time to focus the element into the view
+     * @chainable
+     * @since 0.0.1
+     */
+    focus(transitionTime) {
+        return this.refs["input-element"].focus(transitionTime);
     },
 
     /**
@@ -214,8 +245,8 @@ const Textarea = React.createClass({
      */
     render() {
         const props = this.props,
-              className = (props.className ? props.className+' ' : '') + MAIN_CLASS;
-        return <Input {...props} className={className} element={this.element} />;
+            className = (props.className ? props.className+" " : "") + MAIN_CLASS;
+        return <Input {...props} className={className} element={this.element} ref="input-element" />;
     }
 
 });

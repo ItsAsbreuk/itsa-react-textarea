@@ -1,8 +1,8 @@
 "use strict";
 
 import "purecss";
-import "js-ext/lib/object";
-import "js-ext/lib/string";
+import "itsa-jsext/lib/object";
+import "itsa-jsext/lib/string";
 
 import "itsa-react-checkbox/css/component.scss";
 import "itsa-react-input/css/component.scss";
@@ -247,7 +247,7 @@ const validatorsDefinition = {
 };
 
 const validateProps = props => {
-    props.each((value, key) => {
+    props.itsa_each((value, key) => {
         // only inspect primary type-properties
         if (typeof props[key]!=="object") {
             props.validated[key] = validate(props[key], props.validators[key]);
