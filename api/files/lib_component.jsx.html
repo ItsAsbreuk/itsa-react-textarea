@@ -98,132 +98,18 @@
 */
 
 const React = require(&quot;react&quot;),
-    PropTypes = React.PropTypes,
+    PropTypes = require(&quot;prop-types&quot;),
     Input = require(&quot;itsa-react-input&quot;);
 
 const MAIN_CLASS = &quot;itsa-textarea&quot;;
 
-const Textarea = React.createClass({
-
-    propTypes: {
-        /**
-         * Whether to autofocus the Component.
-         *
-         * @property autoFocus
-         * @type Boolean
-         * @since 0.0.1
-        */
-        autoFocus: PropTypes.bool,
-
-        /**
-         * The error-message that appears when the element is wrong validated.
-         *
-         * @property errorMsg
-         * @type String
-         * @since 0.0.1
-        */
-        errorMsg: PropTypes.string,
-
-        /**
-         * Whether the parent-form has been validated.
-         * This value is needed to determine if the validate-status should be set.
-         *
-         * @property formValidated
-         * @type Boolean
-         * @since 0.0.1
-        */
-        formValidated: PropTypes.bool,
-
-        /**
-         * The text that should appear when the element is wrong validated.
-         *
-         * @property helpText
-         * @type String
-         * @since 0.0.1
-        */
-        helpText: PropTypes.string,
-
-        /**
-         * The &#x60;id&#x60; of the element.
-         *
-         * @property id
-         * @type String
-         * @since 0.0.1
-        */
-        id: PropTypes.string,
-
-        /**
-         * Whether to mark the Component when successfully validated.
-         *
-         * @property markValidated
-         * @type Boolean
-         * @since 0.0.1
-        */
-        markValidated: PropTypes.bool,
-
-        /**
-         * Whether the Component should show an validate-reclamation (star)
-         *
-         * @property markValidated
-         * @type Boolean
-         * @since 0.0.1
-        */
-        markRequired: PropTypes.bool,
-
-        /**
-         * The &#x60;name&#x60; for the element.
-         *
-         * @property name
-         * @type String
-         * @since 0.0.1
-        */
-        name: PropTypes.string,
-
-        /**
-         * The &#x60;onChange&#x60; function, which should update the &#x60;state&#x60;.
-         *
-         * @property onChange
-         * @type Function
-         * @since 0.0.1
-        */
-        onChange: PropTypes.func.isRequired,
-
-        /**
-         * The &#x60;placeholder&#x60; for the element.
-         *
-         * @property placeholder
-         * @type String
-         * @since 0.0.1
-        */
-        placeholder: PropTypes.string,
-
-        /**
-         * The tabindex of the Component.
-         *
-         * @property type
-         * @type Number
-         * @since 0.0.1
-        */
-        tabIndex: PropTypes.number,
-
-        /**
-         * Whether the property is validated right.
-         *
-         * @property validated
-         * @type Boolean
-         * @since 0.0.1
-        */
-        validated: PropTypes.bool,
-
-        /**
-         * The &#x60;value&#x60; of the input-element.
-         *
-         * @property value
-         * @type String
-         * @since 0.0.1
-        */
-        value: PropTypes.string
-    },
+class Textarea extends React.Component {
+    constructor(props) {
+        super(props);
+        const instance = this;
+        instance.element = instance.element.bind(instance);
+        instance.focus = instance.focus.bind(instance);
+    }
 
     /**
      * componentDidMount will call &#x60;this.activatePlaces()&#x60;;
@@ -242,7 +128,19 @@ const Textarea = React.createClass({
      */
     element(inputProps) {
         return (&lt;textarea {...inputProps} /&gt;);
-    },
+    }
+
+    /**
+     * Sets the focus on the Component.
+     *
+     * @method focus
+     * @param [transitionTime] {Number} transition-time to focus the element into the view
+     * @chainable
+     * @since 0.0.1
+     */
+    focus(transitionTime) {
+        return this.refs[&quot;input-element&quot;].focus(transitionTime);
+    }
 
     /**
      * Gets the Component&quot;s internal state. Note, that the this is NOT Redux&quot;s state.
@@ -298,11 +196,149 @@ const Textarea = React.createClass({
      */
     render() {
         const props = this.props,
-            className = (props.className ? props.className+&#x27; &#x27; : &#x27;&#x27;) + MAIN_CLASS;
-        return &lt;Input {...props} className={className} element={this.element} /&gt;;
+            className = (props.className ? props.className+&quot; &quot; : &quot;&quot;) + MAIN_CLASS;
+        return &lt;Input {...props} className={className} element={this.element} ref=&quot;input-element&quot; /&gt;;
     }
 
-});
+}
+
+Textarea.propTypes = {
+    /**
+     * Whether to autofocus the Component.
+     *
+     * @property autoFocus
+     * @type Boolean
+     * @since 0.0.1
+    */
+    autoFocus: PropTypes.bool,
+
+    /**
+     * The class that should be set on the element
+     *
+     * @property className
+     * @type String
+     * @since 0.0.1
+    */
+    className: PropTypes.string,
+
+    /**
+     * The error-message that appears when the element is wrong validated.
+     *
+     * @property errorMsg
+     * @type String
+     * @since 0.0.1
+    */
+    errorMsg: PropTypes.string,
+
+    /**
+     * Whether the parent-form has been validated.
+     * This value is needed to determine if the validate-status should be set.
+     *
+     * @property formValidated
+     * @type Boolean
+     * @since 0.0.1
+    */
+    formValidated: PropTypes.bool,
+
+    /**
+     * The text that should appear when the element is wrong validated.
+     *
+     * @property helpText
+     * @type String
+     * @since 0.0.1
+    */
+    helpText: PropTypes.string,
+
+    /**
+     * The &#x60;id&#x60; of the element.
+     *
+     * @property id
+     * @type String
+     * @since 0.0.1
+    */
+    id: PropTypes.string,
+
+    /**
+     * Whether to mark the Component when successfully validated.
+     *
+     * @property markValidated
+     * @type Boolean
+     * @since 0.0.1
+    */
+    markValidated: PropTypes.bool,
+
+    /**
+     * Whether the Component should show an validate-reclamation (star)
+     *
+     * @property markValidated
+     * @type Boolean
+     * @since 0.0.1
+    */
+    markRequired: PropTypes.bool,
+
+    /**
+     * The &#x60;name&#x60; for the element.
+     *
+     * @property name
+     * @type String
+     * @since 0.0.1
+    */
+    name: PropTypes.string,
+
+    /**
+     * The &#x60;onChange&#x60; function, which should update the &#x60;state&#x60;.
+     *
+     * @property onChange
+     * @type Function
+     * @since 0.0.1
+    */
+    onChange: PropTypes.func.isRequired,
+
+    /**
+     * The &#x60;placeholder&#x60; for the element.
+     *
+     * @property placeholder
+     * @type String
+     * @since 0.0.1
+    */
+    placeholder: PropTypes.string,
+
+    /**
+     * Inline style
+     *
+     * @property style
+     * @type object
+     * @since 0.0.1
+    */
+    style: PropTypes.object,
+
+    /**
+     * The tabindex of the Component.
+     *
+     * @property type
+     * @type Number
+     * @since 0.0.1
+    */
+    tabIndex: PropTypes.number,
+
+    /**
+     * Whether the property is validated right.
+     *
+     * @property validated
+     * @type Boolean
+     * @since 0.0.1
+    */
+    validated: PropTypes.bool,
+
+    /**
+     * The &#x60;value&#x60; of the input-element.
+     *
+     * @property value
+     * @type String
+     * @since 0.0.1
+    */
+    value: PropTypes.string
+};
 
 module.exports = Textarea;
 

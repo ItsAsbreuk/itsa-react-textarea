@@ -1,8 +1,6 @@
 "use strict";
 
 import "purecss";
-import "itsa-jsext/lib/object";
-import "itsa-jsext/lib/string";
 
 import "itsa-react-checkbox/css/component.scss";
 import "itsa-react-input/css/component.scss";
@@ -21,7 +19,18 @@ const React = require("react"),
 /*******************************************************
  * Custom form-Component
  *******************************************************/
-const MyForm = React.createClass({
+class MyForm extends React.Component {
+    constructor(props) {
+        super(props);
+        const instance = this;
+        instance.state = {
+            formValid: false,
+            formValidated: false
+        };
+        instance.focusUnvalidated = instance.focusUnvalidated.bind(instance);
+        instance.formValid = instance.formValid.bind(instance);
+        instance.handleSubmit = instance.handleSubmit.bind(instance);
+    }
 
     focusUnvalidated() {
         const instance = this;
@@ -41,20 +50,12 @@ const MyForm = React.createClass({
         else if (!validated.termsAccepted) {
             instance.refs.terms.focus();
         }
-    },
+    }
 
     formValid() {
         const validated = this.props.validated;
         return validated.name && validated.email && validated.phone  && validated.password && validated.termsAccepted;
-    },
-
-    getInitialState() {
-        return {
-            formValid: false,
-            formValidated: false
-        };
-    },
-
+    }
 
     handleSubmit(e) {
         const formValid = this.formValid();
@@ -67,7 +68,7 @@ const MyForm = React.createClass({
             formValid,
             target: this
         });
-    },
+    }
 
     render() {
         let formClass = "pure-form pure-form-stacked";
@@ -172,7 +173,7 @@ const MyForm = React.createClass({
         );
     }
 
-});
+}
 
 
 /*******************************************************
@@ -230,7 +231,7 @@ const validatorsDefinition = {
     },
 
     email(val) {
-        return val.validateEmail(); // comes from itsa/lib/string
+        return val.itsa_isValidEmail(); // comes from itsa-jsext
     },
 
     password(val) {

@@ -55,150 +55,7 @@
     "classitems": [
         {
             "file": "lib/component.jsx",
-            "line": 26,
-            "description": "Whether to autofocus the Component.",
-            "itemtype": "property",
-            "name": "autoFocus",
-            "type": "Boolean",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 35,
-            "description": "The error-message that appears when the element is wrong validated.",
-            "itemtype": "property",
-            "name": "errorMsg",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 44,
-            "description": "Whether the parent-form has been validated.\nThis value is needed to determine if the validate-status should be set.",
-            "itemtype": "property",
-            "name": "formValidated",
-            "type": "Boolean",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 54,
-            "description": "The text that should appear when the element is wrong validated.",
-            "itemtype": "property",
-            "name": "helpText",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 63,
-            "description": "The `id` of the element.",
-            "itemtype": "property",
-            "name": "id",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 72,
-            "description": "Whether to mark the Component when successfully validated.",
-            "itemtype": "property",
-            "name": "markValidated",
-            "type": "Boolean",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 81,
-            "description": "Whether the Component should show an validate-reclamation (star)",
-            "itemtype": "property",
-            "name": "markValidated",
-            "type": "Boolean",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 90,
-            "description": "The `name` for the element.",
-            "itemtype": "property",
-            "name": "name",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 99,
-            "description": "The `onChange` function, which should update the `state`.",
-            "itemtype": "property",
-            "name": "onChange",
-            "type": "Function",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 108,
-            "description": "The `placeholder` for the element.",
-            "itemtype": "property",
-            "name": "placeholder",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 117,
-            "description": "The tabindex of the Component.",
-            "itemtype": "property",
-            "name": "type",
-            "type": "Number",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 126,
-            "description": "Whether the property is validated right.",
-            "itemtype": "property",
-            "name": "validated",
-            "type": "Boolean",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 135,
-            "description": "The `value` of the input-element.",
-            "itemtype": "property",
-            "name": "value",
-            "type": "String",
-            "since": "0.0.1",
-            "class": "TextArea",
-            "module": "itsa-react-textarea"
-        },
-        {
-            "file": "lib/component.jsx",
-            "line": 145,
+            "line": 31,
             "description": "componentDidMount will call `this.activatePlaces()`;",
             "itemtype": "method",
             "name": "componentDidMount",
@@ -208,7 +65,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 152,
+            "line": 38,
             "description": "Returns the rendered React-Element that serves as the source dom-element",
             "itemtype": "method",
             "name": "element",
@@ -228,7 +85,26 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 164,
+            "line": 50,
+            "description": "Sets the focus on the Component.",
+            "itemtype": "method",
+            "name": "focus",
+            "params": [
+                {
+                    "name": "transitionTime",
+                    "description": "transition-time to focus the element into the view",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "chainable": 1,
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 62,
             "description": "Gets the Component\"s internal state. Note, that the this is NOT Redux\"s state.",
             "itemtype": "method",
             "name": "getInitialState",
@@ -241,7 +117,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 172,
+            "line": 70,
             "description": "Sets the focus on the Component.",
             "itemtype": "method",
             "name": "focus",
@@ -252,7 +128,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 180,
+            "line": 78,
             "description": "The method that is called whenever the input-Element changes its value.\nWill update the Redux-store (signupuser.homeaddress);",
             "itemtype": "method",
             "name": "handleChange",
@@ -269,7 +145,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 189,
+            "line": 87,
             "description": "The method that is called whenever the input-Element gets the focus.\nIt will change its internal state, so that the css looks right and\nalso any validation-messages disappear.",
             "itemtype": "method",
             "name": "handleFocus",
@@ -286,7 +162,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 199,
+            "line": 97,
             "description": "The method that is called whenever the input-Element gets blurred.\nIt will change its internal state, so that the css looks right and\nalso any validation-messages appear.",
             "itemtype": "method",
             "name": "handleBlur",
@@ -303,13 +179,178 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 209,
+            "line": 107,
             "description": "React render-method --> renderes the Component.",
             "itemtype": "method",
             "name": "render",
             "return": {
                 "description": "ReactComponent"
             },
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 123,
+            "description": "Whether to autofocus the Component.",
+            "itemtype": "property",
+            "name": "autoFocus",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 132,
+            "description": "The class that should be set on the element",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 141,
+            "description": "The error-message that appears when the element is wrong validated.",
+            "itemtype": "property",
+            "name": "errorMsg",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 150,
+            "description": "Whether the parent-form has been validated.\nThis value is needed to determine if the validate-status should be set.",
+            "itemtype": "property",
+            "name": "formValidated",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 160,
+            "description": "The text that should appear when the element is wrong validated.",
+            "itemtype": "property",
+            "name": "helpText",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 169,
+            "description": "The `id` of the element.",
+            "itemtype": "property",
+            "name": "id",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 178,
+            "description": "Whether to mark the Component when successfully validated.",
+            "itemtype": "property",
+            "name": "markValidated",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 187,
+            "description": "Whether the Component should show an validate-reclamation (star)",
+            "itemtype": "property",
+            "name": "markValidated",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 196,
+            "description": "The `name` for the element.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 205,
+            "description": "The `onChange` function, which should update the `state`.",
+            "itemtype": "property",
+            "name": "onChange",
+            "type": "Function",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 214,
+            "description": "The `placeholder` for the element.",
+            "itemtype": "property",
+            "name": "placeholder",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 223,
+            "description": "Inline style",
+            "itemtype": "property",
+            "name": "style",
+            "type": "object",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 232,
+            "description": "The tabindex of the Component.",
+            "itemtype": "property",
+            "name": "type",
+            "type": "Number",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 241,
+            "description": "Whether the property is validated right.",
+            "itemtype": "property",
+            "name": "validated",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "TextArea",
+            "module": "itsa-react-textarea"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 250,
+            "description": "The `value` of the input-element.",
+            "itemtype": "property",
+            "name": "value",
+            "type": "String",
             "since": "0.0.1",
             "class": "TextArea",
             "module": "itsa-react-textarea"
