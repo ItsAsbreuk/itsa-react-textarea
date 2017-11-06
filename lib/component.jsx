@@ -56,7 +56,7 @@ class Textarea extends React.Component {
      * @since 0.0.1
      */
     focus(transitionTime) {
-        return this.refs["input-element"].focus(transitionTime);
+        return this._inputElement.focus(transitionTime);
     }
 
     /**
@@ -112,9 +112,10 @@ class Textarea extends React.Component {
      * @since 0.0.1
      */
     render() {
-        const props = this.props,
+        const instance = this,
+            props = instance.props,
             className = (props.className ? props.className+" " : "") + MAIN_CLASS;
-        return <Input {...props} className={className} element={this.element} ref="input-element" />;
+        return <Input {...props} className={className} element={instance.element} ref={node => instance._inputElement = node} />;
     }
 
 }

@@ -70,7 +70,7 @@
 	    ReactDOM = __webpack_require__(50),
 	    Textarea = __webpack_require__(197),
 	    MaskedInput = __webpack_require__(223),
-	    Checkbox = __webpack_require__(226),
+	    Checkbox = __webpack_require__(227),
 	    Input = __webpack_require__(201),
 	    REG_EXP_PHONE = /^\(\d{0,3}\) \d{0,3}\-\d{0,4}$/;
 
@@ -767,7 +767,7 @@
 
 
 	// module
-	exports.push([module.id, ".itsa-checkbox {\n  font-size: 0.9em;\n  margin: 0;\n  padding: 0;\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  height: 2em;\n  z-index: 1;\n  overflow: hidden;\n  border: 1px solid #CCC;\n  -webkit-tap-highlight-color: transparent;\n  /* remove gray color when pressed on iOS */ }\n\n.itsa-checkbox.bordered {\n  border-radius: 1em; }\n\n.itsa-checkbox.error {\n  border-color: #FF6A6A !important; }\n\n.itsa-checkbox:focus {\n  outline: 0; }\n\n.itsa-checkbox div {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: block; }\n\n.itsa-checkbox:focus:not(.disabled):not(.readonly) .itsa-checkbox-on,\n.itsa-checkbox:focus:not(.disabled):not(.readonly) .itsa-checkbox-off {\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));\n  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4) inset; }\n\n.itsa-checkbox:focus:not(.disabled):not(.readonly) .itsa-checkbox-btn {\n  border: solid 1px #888;\n  box-shadow: inset 0 0.17em 0.5em rgba(0, 0, 0, 0.06); }\n\n.itsa-checkbox .itsa-checkbox-constrain {\n  height: 100%;\n  padding: 0;\n  margin: 0;\n  position: relative;\n  top: 0;\n  /* left will be calculated by i-checkbox */ }\n\n.itsa-checkbox .itsa-checkbox-container {\n  position: relative;\n  cursor: pointer;\n  padding: 0;\n  margin: 0;\n  height: 100%;\n  left: 0;\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-transition: left 0.25s;\n  -moz-transition: left 0.25s;\n  -ms-transition: left 0.25s;\n  -o-transition: left 0.25s;\n  transition: left 0.25s; }\n\n.itsa-checkbox.disabled .itsa-checkbox-container,\n.itsa-checkbox.readonly .itsa-checkbox-container {\n  cursor: default; }\n\n.itsa-checkbox .itsa-checkbox-container.notrans {\n  -webkit-transition: none !important;\n  -moz-transition: none !important;\n  -ms-transition: none !important;\n  -o-transition: all 0s !important;\n  /* opera doesn't support none */\n  transition: none !important; }\n\n.itsa-checkbox .itsa-checkbox-on,\n.itsa-checkbox .itsa-checkbox-off {\n  height: 100%;\n  line-height: 2em;\n  position: static;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  float: left;\n  box-shadow: inset 0 0.3em 0.5em rgba(0, 0, 0, 0.18); }\n\n.itsa-checkbox.bordered .itsa-checkbox-on,\n.itsa-checkbox.bordered .itsa-checkbox-off {\n  border-radius: 1em; }\n\n.itsa-checkbox .itsa-checkbox-on {\n  color: #FFF;\n  background-color: #0078E7;\n  padding-right: 2em;\n  left: 1px; }\n\n.itsa-checkbox .itsa-checkbox-off {\n  background-color: #FFF;\n  color: #444;\n  padding-left: 2em;\n  margin-left: calc(-2em + 2px); }\n\n.itsa-checkbox.disabled .itsa-checkbox-on {\n  background-color: #8BB3D8;\n  color: #EAEDED; }\n\n.itsa-checkbox.disabled .itsa-checkbox-off {\n  background-color: #EAEDED;\n  color: #AAA; }\n\n.itsa-checkbox.bordered .itsa-checkbox-on {\n  padding-right: 1.5em; }\n\n.itsa-checkbox.bordered .itsa-checkbox-off {\n  padding-left: 1.5em; }\n\n.itsa-checkbox .itsa-checkbox-btn {\n  position: relative;\n  z-index: 1;\n  box-shadow: inset 0 0.17em 0.5em rgba(0, 0, 0, 0.18);\n  background-color: #FFF;\n  border: solid 1px #CCC;\n  width: 2em;\n  height: 100%; }\n\n.itsa-checkbox.disabled .itsa-checkbox-btn {\n  background-color: #F9F9F9; }\n\n.itsa-checkbox.bordered .itsa-checkbox-btn {\n  border-radius: 100%; }\n", ""]);
+	exports.push([module.id, ".itsa-checkbox {\n  font-size: 0.9em;\n  margin: 0;\n  padding: 0;\n  display: inline-block;\n  position: relative;\n  vertical-align: middle;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  height: 2em;\n  z-index: 1;\n  overflow: hidden;\n  border: 1px solid #CCC;\n  -webkit-tap-highlight-color: transparent;\n  /* remove gray color when pressed on iOS */ }\n\n.itsa-checkbox.bordered {\n  border-radius: 1em; }\n\n.itsa-checkbox.error {\n  border-color: #FF6A6A !important; }\n\n.itsa-checkbox:focus {\n  outline: 0; }\n\n.itsa-checkbox div {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: block; }\n\n.itsa-checkbox:focus:not(.disabled):not(.readonly) .itsa-checkbox-on,\n.itsa-checkbox:focus:not(.disabled):not(.readonly) .itsa-checkbox-off {\n  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);\n  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));\n  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.2));\n  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4) inset; }\n\n.itsa-checkbox:focus:not(.disabled):not(.readonly) .itsa-checkbox-btn {\n  border: solid 1px #888;\n  box-shadow: inset 0 0.17em 0.5em rgba(0, 0, 0, 0.06); }\n\n.itsa-checkbox .itsa-checkbox-constrain {\n  height: 100%;\n  padding: 0;\n  margin: 0;\n  position: relative;\n  top: 0;\n  /* left will be calculated by i-checkbox */ }\n\n.itsa-checkbox .itsa-checkbox-container {\n  position: relative;\n  cursor: pointer;\n  padding: 0;\n  margin: 0;\n  height: 100%;\n  left: 0;\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-transition: left 0.25s;\n  -moz-transition: left 0.25s;\n  -ms-transition: left 0.25s;\n  -o-transition: left 0.25s;\n  transition: left 0.25s; }\n\n.itsa-checkbox.disabled .itsa-checkbox-container,\n.itsa-checkbox.readonly .itsa-checkbox-container {\n  cursor: default; }\n\n.itsa-checkbox .itsa-checkbox-container.notrans {\n  -webkit-transition: none !important;\n  -moz-transition: none !important;\n  -ms-transition: none !important;\n  -o-transition: all 0s !important;\n  /* opera doesn't support none */\n  transition: none !important; }\n\n.itsa-checkbox .itsa-checkbox-on,\n.itsa-checkbox .itsa-checkbox-off {\n  height: 100%;\n  line-height: 2em;\n  position: static;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  float: left;\n  box-shadow: inset 0 0.3em 0.5em rgba(0, 0, 0, 0.18); }\n\n.itsa-checkbox.bordered .itsa-checkbox-on,\n.itsa-checkbox.bordered .itsa-checkbox-off {\n  border-radius: 1em; }\n\n.itsa-checkbox .itsa-checkbox-on {\n  color: #FFF;\n  background-color: #0078E7;\n  padding-right: 2em;\n  left: 1px; }\n\n.itsa-checkbox .itsa-checkbox-off {\n  background-color: #FFF;\n  color: #444;\n  padding-left: 2em;\n  margin-left: calc(-2em + 2px); }\n\n.itsa-checkbox.disabled .itsa-checkbox-on {\n  background-color: #8BB3D8;\n  color: #EAEDED; }\n\n.itsa-checkbox.disabled .itsa-checkbox-off {\n  background-color: #EAEDED;\n  color: #AAA; }\n\n.itsa-checkbox.bordered .itsa-checkbox-on {\n  padding-right: 1.5em; }\n\n.itsa-checkbox.bordered .itsa-checkbox-off {\n  padding-left: 1.5em; }\n\n.itsa-checkbox .itsa-checkbox-btn {\n  position: relative;\n  z-index: 1;\n  box-shadow: inset 0 0.17em 0.5em rgba(0, 0, 0, 0.18);\n  background-color: #FFF;\n  border: solid 1px #CCC;\n  width: 2em;\n  height: 100%; }\n\n.itsa-checkbox.disabled .itsa-checkbox-btn {\n  background-color: #F9F9F9; }\n\n.itsa-checkbox.bordered .itsa-checkbox-btn {\n  border-radius: 100%; }\n", ""]);
 
 	// exports
 
@@ -23006,7 +23006,7 @@
 	  }, {
 	    key: "focus",
 	    value: function focus(transitionTime) {
-	      return this.refs["input-element"].focus(transitionTime);
+	      return this._inputElement.focus(transitionTime);
 	    }
 
 	    /**
@@ -23065,9 +23065,12 @@
 	  }, {
 	    key: "render",
 	    value: function render() {
-	      var props = this.props,
+	      var instance = this,
+	          props = instance.props,
 	          className = (props.className ? props.className + " " : "") + MAIN_CLASS;
-	      return React.createElement(Input, _extends({}, props, { className: className, element: this.element, ref: "input-element" }));
+	      return React.createElement(Input, _extends({}, props, { className: className, element: instance.element, ref: function ref(node) {
+	          return instance._inputElement = node;
+	        } }));
 	    }
 	  }]);
 
@@ -26979,8 +26982,8 @@
 	var React = __webpack_require__(14),
 	    PropTypes = __webpack_require__(199),
 	    ReactDOM = __webpack_require__(50),
-	    Input = __webpack_require__(201),
-	    ReactMaskedInput = __webpack_require__(224);
+	    Input = __webpack_require__(224),
+	    ReactMaskedInput = __webpack_require__(225);
 
 	var ON = 'on',
 	    KEY = "key",
@@ -27460,6 +27463,670 @@
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	/**
+	 * Description here
+	 *
+	 *
+	 *
+	 * <i>Copyright (c) 2016 ItsAsbreuk - http://itsasbreuk.nl</i><br>
+	 * New BSD License - http://choosealicense.com/licenses/bsd-3-clause/
+	 *
+	 *
+	 * @module itsa-react-input
+	 * @class Input
+	 * @since 0.0.1
+	*/
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	__webpack_require__(202);
+
+	var React = __webpack_require__(14),
+	    PropTypes = __webpack_require__(199),
+	    ReactDom = __webpack_require__(50),
+	    later = __webpack_require__(203).later,
+	    MAIN_CLASS = "itsa-input",
+	    MAIN_CLASS_PREFIX = MAIN_CLASS + "-",
+	    FORM_ELEMENT_CLASS_SPACED = " itsa-formelement",
+	    SPACED_MAIN_CLASS_PREFIX = " " + MAIN_CLASS_PREFIX,
+	    ELEMENT = "element";
+
+	var Input = function (_React$Component) {
+	    _inherits(Input, _React$Component);
+
+	    function Input(props) {
+	        _classCallCheck(this, Input);
+
+	        var _this = _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).call(this, props));
+
+	        var instance = _this;
+	        instance.state = {
+	            focussed: !!props.autoFocus
+	        };
+	        instance.element = instance.element.bind(instance);
+	        instance.focus = instance.focus.bind(instance);
+	        instance.handleBlur = instance.handleBlur.bind(instance);
+	        instance.handleChange = instance.handleChange.bind(instance);
+	        instance.handleClick = instance.handleClick.bind(instance);
+	        instance.handleContainerFocus = instance.handleContainerFocus.bind(instance);
+	        instance.handleFocus = instance.handleFocus.bind(instance);
+	        instance.handleKeyDown = instance.handleKeyDown.bind(instance);
+	        instance.handleKeyPress = instance.handleKeyPress.bind(instance);
+	        instance.handleKeyUp = instance.handleKeyUp.bind(instance);
+	        instance._mergeDataAttrs = instance._mergeDataAttrs.bind(instance);
+	        return _this;
+	    }
+
+	    /**
+	     * componentDidMount will call `this.activatePlaces()`;
+	     *
+	     * @method componentDidMount
+	     * @since 0.0.1
+	     */
+
+
+	    _createClass(Input, [{
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            var instance = this,
+	                domNode = ReactDom.findDOMNode(instance);
+	            instance._inputNode = domNode.querySelector("." + MAIN_CLASS_PREFIX + ELEMENT);
+	            if (instance.props.autoFocus) {
+	                instance._focusLater = later(function () {
+	                    return instance.focus();
+	                }, 50);
+	            }
+	        }
+
+	        /**
+	         * componentWilUnmount does some cleanup.
+	         *
+	         * @method componentWillUnmount
+	         * @since 0.0.1
+	         */
+
+	    }, {
+	        key: "componentWillUnmount",
+	        value: function componentWillUnmount() {
+	            this._focusLater && this._focusLater.cancel();
+	        }
+
+	        /**
+	         * Returns the rendered React-Element that serves as the source dom-element
+	         *
+	         * @method element
+	         * @param props {Object} props to be passed through to the Component
+	         * @return ReactComponent
+	         * @since 0.0.4
+	         */
+
+	    }, {
+	        key: "element",
+	        value: function element(props) {
+	            return React.createElement("input", props);
+	        }
+
+	        /**
+	         * Gets the Component's internal state. Note, that the this is NOT Redux"s state.
+	         *
+	         * @method getInitialState
+	         * @return Object the Component internal initial state
+	         * @since 0.0.1
+	         */
+
+	    }, {
+	        key: "getInitialState",
+	        value: function getInitialState() {
+	            return {
+	                focussed: !!this.props.autoFocus
+	            };
+	        }
+
+	        /**
+	         * Sets the focus on the Component.
+	         *
+	         * @method focus
+	         * @param [transitionTime] {Number} transition-time to focus the element into the view
+	         * @chainable
+	         * @since 0.0.1
+	         */
+
+	    }, {
+	        key: "focus",
+	        value: function focus(transitionTime) {
+	            var node = void 0,
+	                length = void 0;
+	            var props = this.props;
+	            if (!props.readOnly && !props.disabled) {
+	                node = this._inputNode;
+	                node.itsa_focus && node.itsa_focus(null, null, transitionTime);
+	                if (node.setSelectionRange) {
+	                    length = node.value.length;
+	                    node.setSelectionRange(length, length);
+	                }
+	            }
+	            return this;
+	        }
+
+	        /**
+	         * The method that is called whenever the input-Element gets blurred.
+	         * It will change its internal state, so that the css looks right and
+	         * also any validation-messages appear.
+	         *
+	         * @method handleBlur
+	         * @param e {Object} event-payload
+	         * @since 0.0.1
+	         */
+
+	    }, {
+	        key: "handleBlur",
+	        value: function handleBlur(e) {
+	            var instance = this,
+	                props = instance.props;
+	            instance.changed = false;
+	            instance.setState({
+	                focussed: false
+	            });
+	            props.onBlur && props.onBlur(e);
+	        }
+
+	        /**
+	         * The method that is called whenever the input-Element changes its value.
+	         * Will update the Redux-store (signupuser.homeaddress);
+	         *
+	         * @method handleChange
+	         * @param e {Object} event-payload
+	         * @since 0.0.1
+	         */
+
+	    }, {
+	        key: "handleChange",
+	        value: function handleChange(e) {
+	            var instance = this,
+	                props = instance.props;
+	            if (!props.readOnly && !props.disabled) {
+	                instance.changed = true;
+	                props.onChange(e);
+	            }
+	        }
+
+	        /**
+	         * The method that is called whenever the input-Element gets clicked.
+	         *
+	         * @method handleClick
+	         * @param e {Object} event-payload
+	         * @since 0.1.0
+	         */
+
+	    }, {
+	        key: "handleClick",
+	        value: function handleClick(e) {
+	            var props = this.props;
+	            if (!props.readOnly && !props.disabled && props.onClick) {
+	                props.onClick(e);
+	            }
+	        }
+
+	        /**
+	         * Callback that sets the focus to the descendent element by calling `focus()`
+	         *
+	         * @method handleContainerFocus
+	         * @param e {Object} event-payload
+	         * @since 0.1.0
+	         */
+
+	    }, {
+	        key: "handleContainerFocus",
+	        value: function handleContainerFocus(e) {
+	            e.target === e.currentTarget && this.focus();
+	        }
+
+	        /**
+	         * The method that is called whenever the input-Element gets the focus.
+	         * It will change its internal state, so that the css looks right and
+	         * also any validation-messages disappear.
+	         *
+	         * @method handleFocus
+	         * @param e {Object} event-payload
+	         * @since 0.0.1
+	         */
+
+	    }, {
+	        key: "handleFocus",
+	        value: function handleFocus(e) {
+	            var props = this.props;
+	            if (!props.readOnly && !props.disabled) {
+	                this.changed = false;
+	                this.setState({
+	                    focussed: true
+	                });
+	                props.onFocus && props.onFocus(e);
+	            }
+	        }
+
+	        /**
+	         * The method that is called whenever the input-Element recieves a keyDown.
+	         *
+	         * @method handleKeyDown
+	         * @param e {Object} event-payload
+	         * @since 0.1.0
+	         */
+
+	    }, {
+	        key: "handleKeyDown",
+	        value: function handleKeyDown(e) {
+	            var props = this.props;
+	            if (!props.readOnly && !props.disabled && props.onKeyDown) {
+	                props.onKeyDown(e);
+	            }
+	        }
+
+	        /**
+	         * The method that is called whenever the input-Element recieves a keyPress.
+	         *
+	         * @method handleKeyPress
+	         * @param e {Object} event-payload
+	         * @since 0.1.0
+	         */
+
+	    }, {
+	        key: "handleKeyPress",
+	        value: function handleKeyPress(e) {
+	            var props = this.props;
+	            if (!props.readOnly && !props.disabled) {
+	                if (props.onKeyEnter && e.charCode === 13) {
+	                    props.onKeyEnter();
+	                }
+	                props.onKeyPress && props.onKeyPress(e);
+	            }
+	        }
+
+	        /**
+	         * The method that is called whenever the input-Element recieves a keyUp.
+	         *
+	         * @method handleKeyUp
+	         * @param e {Object} event-payload
+	         * @since 0.1.0
+	         */
+
+	    }, {
+	        key: "handleKeyUp",
+	        value: function handleKeyUp(e) {
+	            this.props.onKeyUp && this.props.onKeyUp(e);
+	        }
+
+	        /**
+	         * React render-method --> renderes the Component.
+	         *
+	         * @method render
+	         * @return ReactComponent
+	         * @since 0.0.1
+	         */
+
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var wrapperClass = MAIN_CLASS + FORM_ELEMENT_CLASS_SPACED,
+	                inputClass = MAIN_CLASS_PREFIX + ELEMENT,
+	                label = void 0,
+	                errorMsg = void 0,
+	                help = void 0,
+	                inputProps = void 0,
+	                ariaRequired = void 0;
+	            var instance = this,
+	                props = instance.props,
+	                element = props.element || instance.element,
+	                value = String(props.value),
+	                type = props.type || "text",
+	                readOnly = props.readOnly || false,
+	                disabled = props.disabled || false,
+	                errored = !instance.changed && props.validated === false && props.formValidated;
+
+	            props.className && (wrapperClass += " " + props.className);
+	            props.classNameInput && (inputClass += " " + props.classNameInput);
+	            errored && (wrapperClass += SPACED_MAIN_CLASS_PREFIX + "error");
+	            instance.state.focused && (wrapperClass += SPACED_MAIN_CLASS_PREFIX + "focus");
+	            disabled && (wrapperClass += " disabled");
+	            readOnly && (wrapperClass += " readonly");
+
+	            if (props.markValidated && !errored && !instance.state.focussed && !instance.changed && value && props.validated) {
+	                wrapperClass += SPACED_MAIN_CLASS_PREFIX + "feedback-success";
+	            } else if (props.markRequired && !value) {
+	                wrapperClass += SPACED_MAIN_CLASS_PREFIX + "required";
+	                ariaRequired = true;
+	            }
+
+	            if (errored && props.errorMsg) {
+	                errorMsg = React.createElement(
+	                    "div",
+	                    { className: MAIN_CLASS_PREFIX + "error-text" },
+	                    props.errorMsg
+	                );
+	            }
+
+	            if (props.helpText) {
+	                help = React.createElement(
+	                    "div",
+	                    { className: MAIN_CLASS_PREFIX + "help-text" },
+	                    props.helpText
+	                );
+	            }
+
+	            inputProps = {
+	                "aria-disabled": disabled,
+	                "aria-invalid": errored,
+	                "aria-readonly": readOnly,
+	                "aria-required": ariaRequired,
+	                className: inputClass,
+	                disabled: disabled,
+	                id: props.id,
+	                name: props.name,
+	                onBlur: instance.handleBlur,
+	                onChange: instance.handleChange,
+	                onClick: instance.handleClick,
+	                onFocus: instance.handleFocus,
+	                onKeyDown: instance.handleKeyDown,
+	                onKeyPress: instance.handleKeyPress,
+	                onKeyUp: instance.handleKeyUp,
+	                placeholder: props.placeholder,
+	                role: "textbox",
+	                readOnly: readOnly,
+	                type: type,
+	                value: value
+	            };
+
+	            // merge all data-props:
+	            instance._mergeDataAttrs(inputProps);
+
+	            return React.createElement(
+	                "div",
+	                {
+	                    className: wrapperClass,
+	                    onFocus: instance.handleContainerFocus,
+	                    style: props.style,
+	                    tabIndex: props.tabIndex },
+	                label,
+	                React.createElement(
+	                    "div",
+	                    { className: MAIN_CLASS_PREFIX + "inputbox" },
+	                    element.call(this, inputProps),
+	                    errorMsg
+	                ),
+	                help
+	            );
+	        }
+
+	        /**
+	         * Merges the `data-*` attributes from props into the object
+	         *
+	         * @method _mergeDataAttrs
+	         * @param inputProps {object} the source props which will be extended
+	         * @private
+	         * @return object all the data-* attributes
+	         * @since 0.2.0
+	         */
+
+	    }, {
+	        key: "_mergeDataAttrs",
+	        value: function _mergeDataAttrs(inputProps) {
+	            var props = this.props,
+	                keys = Object.keys(props);
+
+	            keys.forEach(function (key) {
+	                key.substr(0, 5).toLowerCase() === "data-" && (inputProps[key] = props[key]);
+	            });
+	        }
+	    }]);
+
+	    return Input;
+	}(React.Component);
+
+	Input.propTypes = {
+	    /**
+	     * Whether to autofocus the Component.
+	     *
+	     * @property autoFocus
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    autoFocus: PropTypes.bool,
+
+	    /**
+	     * The class that should be set on the element
+	     *
+	     * @property className
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    className: PropTypes.string,
+
+	    /**
+	     * The class that should be set on the underlying input-element
+	     *
+	     * @property classNameInput
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    classNameInput: PropTypes.string,
+
+	    /**
+	     * The error-message that appears when the element is wrong validated.
+	     *
+	     * @property errorMsg
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    errorMsg: PropTypes.string,
+
+	    /**
+	     * Whether the component is disabled
+	     *
+	     * @property disabled
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    disabled: PropTypes.bool,
+
+	    /**
+	     * Whether the parent-form has been validated.
+	     * This value is needed to determine if the validate-status should be set.
+	     *
+	     * @property formValidated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    formValidated: PropTypes.bool,
+
+	    /**
+	     * The text that should appear when the element is wrong validated.
+	     *
+	     * @property helpText
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    helpText: PropTypes.string,
+
+	    /**
+	     * The `id` of the element.
+	     *
+	     * @property id
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    id: PropTypes.string,
+
+	    /**
+	     * Whether to mark the Component when successfully validated.
+	     *
+	     * @property markValidated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    markValidated: PropTypes.bool,
+
+	    /**
+	     * Whether the Component should show an validate-reclamation (star)
+	     *
+	     * @property markValidated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    markRequired: PropTypes.bool,
+
+	    /**
+	     * The `name` for the element.
+	     *
+	     * @property name
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    name: PropTypes.string,
+
+	    /**
+	     * The `onBlur` function, when happening on the DOM-Element.
+	     *
+	     * @property onBlur
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onBlur: PropTypes.func,
+
+	    /**
+	     * The `onChange` function, which should update the `state`.
+	     *
+	     * @property onChange
+	     * @type Function
+	     * @since 0.0.1
+	    */
+	    onChange: PropTypes.func.isRequired,
+
+	    /**
+	     * The `onClick` function, when happening on the DOM-Element.
+	     *
+	     * @property onClick
+	     * @type Function
+	     * @since 0.0.1
+	    */
+	    onClick: PropTypes.func,
+
+	    /**
+	     * The `onFocus` function, when happening on the DOM-Element.
+	     *
+	     * @property onFocus
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onFocus: PropTypes.func,
+
+	    /**
+	     * The `onKeyDown` function, when happening on the DOM-Element.
+	     *
+	     * @property onKeyDown
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onKeyDown: PropTypes.func,
+
+	    /**
+	     * The `onKeyEnter` function, when the enter-key is pressed.
+	     *
+	     * @property onKeyEnter
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onKeyEnter: PropTypes.func,
+
+	    /**
+	     * The `onKeyPress` function, when happening on the DOM-Element.
+	     *
+	     * @property onKeyPress
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onKeyPress: PropTypes.func,
+
+	    /**
+	     * The `onKeyUp` function, when happening on the DOM-Element.
+	     *
+	     * @property onKeyUp
+	     * @type Function
+	     * @since 0.1.0
+	    */
+	    onKeyUp: PropTypes.func,
+
+	    /**
+	     * The `placeholder` for the element.
+	     *
+	     * @property placeholder
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    placeholder: PropTypes.string,
+
+	    /**
+	     * Inline style
+	     *
+	     * @property style
+	     * @type object
+	     * @since 0.0.1
+	    */
+	    style: PropTypes.object,
+
+	    /**
+	     * The `type` of the input-element.
+	     *
+	     * @property type
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    type: PropTypes.string,
+
+	    /**
+	     * The tabindex of the Component.
+	     *
+	     * @property type
+	     * @type Number
+	     * @since 0.0.1
+	    */
+	    tabIndex: PropTypes.number,
+
+	    /**
+	     * Whether the property is validated right.
+	     *
+	     * @property validated
+	     * @type Boolean
+	     * @since 0.0.1
+	    */
+	    validated: PropTypes.bool
+
+	    /**
+	     * The `value` of the input-element.
+	     *
+	     * @property value
+	     * @type String
+	     * @since 0.0.1
+	    */
+	    // not specifying --> may be anything
+	};
+
+	Input.defaultProps = {
+	    value: ""
+	};
+
+	module.exports = Input;
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	var _extends = Object.assign || function (target) {
@@ -27487,7 +28154,7 @@
 	}
 
 	var React = __webpack_require__(14);
-	var InputMask = __webpack_require__(225);
+	var InputMask = __webpack_require__(226);
 
 	var KEYCODE_Z = 90;
 	var KEYCODE_Y = 89;
@@ -27770,7 +28437,7 @@
 	module.exports = MaskedInput;
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -28283,7 +28950,7 @@
 	module.exports = InputMask;
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28310,7 +28977,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(227);
+	__webpack_require__(228);
 
 	__webpack_require__(202);
 
@@ -29017,7 +29684,7 @@
 	module.exports = Checkbox;
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29025,13 +29692,13 @@
 	__webpack_require__(220);
 	__webpack_require__(218);
 	__webpack_require__(219);
-	__webpack_require__(228);
 	__webpack_require__(229);
 	__webpack_require__(230);
 	__webpack_require__(231);
+	__webpack_require__(232);
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports) {
 
 	/**
@@ -29366,7 +30033,7 @@
 	})(Array.prototype);
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -29387,7 +30054,7 @@
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	__webpack_require__(218);
-	__webpack_require__(228);
+	__webpack_require__(229);
 	__webpack_require__(219);
 
 	var STRING = "string";
@@ -29620,7 +30287,7 @@
 	};
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports) {
 
 	/* global Promise:true */
@@ -29983,7 +30650,7 @@
 	}
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports) {
 
 	/**
